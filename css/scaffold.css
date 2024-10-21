@@ -1,0 +1,109 @@
+/*======================================================*/
+/*==================== MAIN CONTENT ====================*/
+/*======================================================*/
+.simple-card-s{
+  display: grid;
+  place-items: center;
+  width: 300px;
+  height: 450px;
+  margin: auto;
+  border: #f0f0f0 1px solid;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
+}
+
+.card-header-s{
+  width: 100%;
+  height: 60px;
+  justify-content: flex-end;
+  border: 1px solid red;
+}
+
+.card-header-s .card-sub-info-s{
+  width: 100%;
+  height: 20px;
+  display:inline-grid;
+  grid-template-columns: auto auto;
+  padding: 0px 5px;
+  gap: 10px;
+  text-align: left;
+  font-size: 1rem;
+  border: 2px dashed green;
+}
+
+.card-header-s .card-rarity-s{
+  text-align: right;
+  border: 1px solid black;
+}
+
+.card-header-s .card-sub-title-s{
+  text-align: left;
+  border: 1px red solid;
+}
+
+.card-title-s{
+  height: 40px;
+  font-size: 1.5rem;
+  text-align: center;
+  position: relative;
+  align-content: center;
+  border: 1px solid #888;
+}
+
+.simple-card-s .card-illustration-container-s{
+  width: 280px;
+  height: 200px;
+  border: 3px rgba(136,136,136,0.3) solid;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.card-illustration-container-s .card-illustration-s{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.simple-card-s .card-content-s{
+  width: 100%;
+  height: 160px;
+  text-align: left;
+  border: 1px solid black;
+  padding: 5px 10px 0px 10px;
+}
+
+.card-content-s .card-desc-s{
+  border: 1px solid black;
+  font-size: 1rem;
+}
+
+.card-content-s .card-effects-s{
+  border: 1px solid black;
+  font-size: 0.9rem;
+}
+
+.simple-card-s .card-footer-s{
+  display:inline-grid;
+  grid-template-columns: auto auto;
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  font-weight: 600;
+  border: 1px dashed black;
+}
+
+.card-footer-s .card-id-s{
+  font-size: 0.9rem;
+  border: 1px solid black;
+  text-align: left;
+}
+
+.card-footer-s .card-serial-s{
+  font-size: 0.9rem;
+  border: 1px solid black;
+  text-align: right;
+}
+
+.simple-card-s:hover{
+  box-shadow: lime 0px 2px 8px 0px;
+}

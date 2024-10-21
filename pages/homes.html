@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/css/new.css">
+  <link rel="stylesheet" href="/css/scaffold.css">
+  <link rel="stylesheet" href="/css/style-2.css">
+  <title>The D project</title>
+  <link rel="icon" href="/assets/favicon.ico" sizes="any">
+  <link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+</head>
+<body>
+
+  <div class="header">
+    <div class="nav-bar">
+
+      <div class="nav-item">
+        <button class="nav-button" onclick= "itemsCaller()">About</button>
+      </div>
+
+      <div class="nav-item">
+        <button class="nav-button">Collections</button>
+      </div>
+
+      <div class="nav-item">
+        <button class="special-button">Pull</button>
+      </div>
+
+      <div class="nav-item">
+        <button class="nav-button">Storage</button>
+      </div>
+
+      <div class="nav-item">
+        <button class="nav-button">Discover</button>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="main-container">
+
+    <section class="collection-page-text-content">
+      <div class="universal-content-headline">
+          Cards database
+      </div>
+      <div class="universal-content-content">
+          All cards in the game.
+      </div>
+      <br>
+      <div class="universal-content-content">
+        Toggle Stats / Description
+      </div>
+    </section>
+
+    <div class="card-container">
+
+
+      <!-- The id for the card goes here next to the "-" in id="simple-card-" -->
+      <div id="simple-card-1" class="simple-card">
+
+
+        <div id="card-header" class="card-header">
+
+          <div id="card-sub-info" class="card-sub-info">
+            <div id="card-type" class="card-sub-title">
+              <span class="universal-card-headline">
+                Type:
+              </span>
+              <span id="master-root-type" class="master-root-type">
+                Utility
+              </span>
+              <span id="root-divider" class="root-divider">/</span>
+              <span id="sub-root-type" class="sub-root-type">
+                Support
+              </span>
+            </div>
+
+            <div id="card-rarity" class="card-rarity">
+              <span class="universal-card-headline">
+                Rarity:
+              </span>
+              <span id="rarity-string-display" class="rarity-string-display">
+                Ultra rare
+              </span>
+            </div>
+          </div>
+
+          <div id="card-title-area" class="card-title">
+            <span id="card-title" class="card-title-content">
+              Flask of Golden Blood
+            </span>
+          </div>
+
+        </div>
+
+
+        <div class="card-illustration-container">
+          <img id="card-illustration" class="card-illustration" src="/img/flask.png" alt="card illustration">
+        </div>
+
+
+        <div id="card-content-area" class="card-content">
+
+          <div id="card-effect-area" class="card-effect">
+
+            <div class="card-effect universal-card-headline">
+              Effects:
+            </div>
+
+            <div id="card-effect" class="card-effect universal-card-content">
+              In this strategic card game, players aim to outwit their opponents by drawing and playing cards to form
+              the best combinations. Each player has a hand of cards and can choose to keep, exchange, or use special
+              abilities to gain an edge. The game involves various rounds, with players trying to achieve specific
+              goals or accumulate points. With elements of strategy and chance, the game remains unpredictable and
+              exciting. The player who amasses the most points by the end of the game is declared the winner.
+              <!-- SAMPLE TEXT
+                 <span>Restore a total of </span> <span id="effect-keyphrase" class="content-keyphrase"> 300 HP(+15% user's maximum HP)
+              </span> <span>in 12 seconds for every 1 second. Also, grant the user the ability to immune from all
+              [Recovery Debuff] effect for 6 seconds.</span>
+              -->
+              <br>
+              <span id="card-effect-sub-info" class="universal-card-content">
+                Capacity: 3. Recharges 1 every 30 seconds.
+              </span>
+            </div>
+
+          </div>
+
+          <div id="card-description-area" class="card-desc" style="display:block">
+            <div class="card-desc universal-card-headline">
+              Description
+            </div>
+            <div id="card-desc-content" class="card-desc universal-card-content">
+              The tears from Mother. Those who drinks shall feel their soul rested. What the fuck ?
+            </div>
+          </div>
+
+          <div id="card-stats-area" class="card-stat" style="display:none">
+            <div class="card-stat-container universal-card-headline">
+              Stats<span id="stat-extra-info" class="stat-extra-info universal-card-headline"> (Equipped) </span>:
+              <span class="card-stat">
+                <span class="string-stat-display">
+                  <span id="op-1">+</span><span id="val-1">200</span> <span id="unit-1">HP</span>
+                  <span id="stats-divider" class="stats-divider">|</span>
+                  <span id="op-2">+</span><span id="val-2">50%</span> <span id="unit-2">Phy.ATK</span>
+                </span>
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div id="card-footer" class="card-footer">
+
+          <div id="card-id-container" class="card-id">
+            <span class="universal-card-headline">ID: </span>
+            <span id="card-id" class="card-id"> 12CZ32018-CN</span>
+          </div>
+
+          <div id="card-serial-container" class="card-serial">
+            <span class="universal-card-headline">Quantity:</span>
+            <span id="card-serial" class="card-serial">130/101</span>
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="simple-card-s">
+        <div class="card-header-s">
+          <div class="card-sub-info-s">
+            <div class="card-sub-title-s">8</div>
+            <div class="card-rarity-s">This is card's rarity</div>
+          </div>
+          <div class="card-title-s">
+            <h5>This is the card header</h5>
+          </div>
+        </div>
+        <div class="card-illustration-container-s">
+          <img class="card-illustration" src="/img/flask.png">
+        </div>
+        <div class="card-content-s">
+          <div class="card-desc-s">
+            This is the card content
+          </div>
+          <hr>
+          <div class="card-effects-s">
+            This is also the card's content
+          </div>
+        </div>
+        <div class="card-footer-s">
+          <div class="card-id-s">
+            100/120
+          </div>
+          <div class="card-serial-s">
+            new
+          </div>
+        </div>
+      </div>
+
+
+      <div class="simple-card-2">
+
+        <div class="card-header-2">
+          <div class="card-sub-info-2">
+            <div class="card-sub-title-2">
+              The alone
+            </div>
+            <div class="card-rarity-2">This is card's rarity</div>
+          </div>
+          <div class="card-title-2">
+            <h5>Flask of Golden Blood</h5>
+          </div>
+        </div>
+
+        <div class="card-illustration-container-2">
+          <img class="card-illustration-2" src="/img/flask.png">
+        </div>
+
+        <div class="card-content-2">
+          <div class="card-effects-2">
+            Restore a total of 300 HP in 15 seconds for every 1 second.Must be Special Summoned with "Dark Fusion". Cannot be destroyed
+            by battle or card effects. During your Main Phase: You can destroy all monsters your opponent controls
+            with ATK less than or equal to this card's ATK, also this card gains 200 ATK for each monster destroyed
+            this way. Additionally, you cannot declare attacks for the rest of this turn, except with "HERO" monsters.
+
+          </div>
+          <hr>
+          <div class="card-desc-2">
+            The tears from Mother. Those who drink shall feel their soul rested.
+          </div>
+        </div>
+
+        <div class="card-footer-2">
+          <div class="card-id-2">
+            100/120
+          </div>
+          <div class="card-serial-2">
+            new
+          </div>
+        </div>
+
+      </div>
+
+      <div class="simple-card">
+        <div class="card-header">
+          <div class="card-sub-info">
+            <div class="card-sub-title">The first </div>
+            <div class="card-rarity">This is card's rarity</div>
+          </div>
+          <div class="card-title">
+            <h5>English 50 words. (Average)</h5>
+          </div>
+        </div>
+        <div class="card-illustration-container">
+        </div>
+        <div class="card-desc-area sample">
+          <div class="card-desc universal-name">
+            <span class="sample-span-1">This i (SPAN 2) s the card contentThis is the card contentThis is the card contentThis is the card contentThis is the card contentThis is the card content</span>
+          </div>
+          <hr>
+          <div class="card-effects universal-name">
+            <span class="sample-span-2">This is also the card's contentThis is the card contentThis is the card contentThis is the card content</span>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="card-id">
+            100/120
+          </div>
+          <div class="card-">
+          </div>
+        </div>
+      </div>
+
+      <div class="simple-card">
+        <div class="card-header">
+          <div class="card-sub-info">
+            <div class="card-sub-title">8</div>
+            <div class="card-rarity">This is card's rarity</div>
+          </div>
+          <div class="card-title">
+            <h5>English 100 words (Average)<span id="wcCount">  </span> </h5>
+          </div>
+        </div>
+        <div class="card-illustration-container">
+        </div>
+        <div class="card-desc-area sample">
+          <div class="card-desc universal-name">
+            <span class="sample-span-1">This is SPAN 1 the card contentThis is the card contentThis is the card contentThis is the card contentThis is the card contentThis is the card contentThis is the card contentThis is the card contentThis is the card contentThis is the card contentThis is the card contentThis is the card contentThis is the card contentThis is the card contentThis is the card contentThis is the card contentThis is the card contentThis is the card contentThis is the card contentThis is the card contentThis is the card content</span>
+          </div>
+          <hr>
+          <div class="card-effects universal-name">
+            <span class="sample-span-2">This is also the card's contentThis is the card contentThis is the card contentThis is the card contentThis is the card contentThis is the card contentThis is the card contentThis is the card contentThis is the card contentThis is the card contentThis is the card contentThis is the card contentThis is the card contentThis is the card content</span>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="card-id">
+            100/120
+          </div>
+          <div class="card-">
+          </div>
+        </div>
+      </div>
+
+      <div class="simple-card">
+        <div class="card-header">
+          <div class="card-sub-info">
+            <div class="card-sub-title">8</div>
+            <div class="card-rarity">This is card's rarity</div>
+          </div>
+          <div class="card-title">
+            <h5>This is the card header</h5>
+          </div>
+        </div>
+        <div class="card-illustration-container">
+        </div>
+        <div class="card-content">
+          <div class="card-desc">
+            This is the card content
+          </div>
+          <hr>
+          <div class="card-effects">
+            This is also the card's content
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="card-id">
+            100/120
+          </div>
+          <div class="card-">
+          </div>
+        </div>
+      </div>
+
+      <div class="simple-card">
+        <div class="card-header">
+          <div class="card-sub-info">
+            <div class="card-sub-title">8</div>
+            <div class="card-rarity">This is card's rarity</div>
+          </div>
+          <div class="card-title">
+            <h5>This is the card header</h5>
+          </div>
+        </div>
+        <div class="card-illustration-container">
+        </div>
+        <div class="card-content">
+          <div class="card-desc">
+            This is the card content
+          </div>
+          <hr>
+          <div class="card-effects">
+            This is also the card's content
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="card-id">
+            100/120
+          </div>
+          <div class="card-">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+</body>
+
+</html>
